@@ -24,20 +24,17 @@ class ejer4 {
         System.out.print("escriba el numero de la fila que quiere ver el maximo");
         int maximo = entrada.nextInt();
         maximo--;
-        int cont=0;
-        for (int i = 0; i < 3; i++) {
-            for (int j = maximo; j <= maximo; j++) {
-              
-              
-              if(matriz[i][maximo]>cont){
-                  cont=matriz[i][maximo];
-                  System.out.println("");
-              }
+        int mayor=0;
+        for (int i = maximo; i <= maximo; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.print(matriz[i][j] + " ");
+                if(matriz[i][j]>mayor){
+                    mayor=matriz[i][j];
+                }
             }
-            
         }
-        System.out.println(" ");
-        System.out.println("el maximo es " + cont);
+        System.out.println("el numero maximo es "+mayor);
+        
 
     }
 
