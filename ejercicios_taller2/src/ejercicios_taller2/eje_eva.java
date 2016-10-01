@@ -28,7 +28,7 @@ class ejercicio_evaluable {
         colum1--;
         
         int matriz[][]=new int[fila][colum];
-        int fila1[]=new int[4];
+        
         
       
         
@@ -37,9 +37,7 @@ class ejercicio_evaluable {
                 matriz[i][j]=(int)(Math.random()*10);
                 System.out.print(matriz[i][j]+" ");
                 
-                if(i==0){
-                    matriz[i][j]=0;
-                }
+                
                 
             }System.out.println("");
         }
