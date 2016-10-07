@@ -53,6 +53,12 @@ public class formularios extends javax.swing.JFrame {
             }
         });
 
+        txtfield3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtfield3ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -68,7 +74,7 @@ public class formularios extends javax.swing.JFrame {
                             .addComponent(txtfield3, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(txtfield1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(jButton1)))))
                 .addContainerGap(161, Short.MAX_VALUE))
         );
@@ -95,8 +101,8 @@ public class formularios extends javax.swing.JFrame {
         // para publicas ca.numero=10;
         int num=Integer.parseInt(txtfield1.getText());
         int num2=Integer.parseInt(txtfield3.getText());
-        ca.setNumero2(num2);
         ca.setNumero(num);
+        ca.setNumero2(num2);
         
         txtfield2.setText(String.valueOf(ca.getNumero()+ca.getNumero2()));
         
@@ -105,6 +111,10 @@ public class formularios extends javax.swing.JFrame {
     private void txtfield2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtfield2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtfield2ActionPerformed
+
+    private void txtfield3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtfield3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtfield3ActionPerformed
 
     /**
      * @param args the command line arguments

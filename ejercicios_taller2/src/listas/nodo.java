@@ -11,8 +11,8 @@ package listas;
  */
 public class nodo {
     
-    int numero;
-    int numero2;
+   private int numero;
+   private int numero2;
 
     public int getNumero() {
         return numero;
