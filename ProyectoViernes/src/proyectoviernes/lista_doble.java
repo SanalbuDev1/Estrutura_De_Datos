@@ -1,12 +1,16 @@
 
 package proyectoviernes;
 
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
 
 public class lista_doble {
     
     
     private Nodo_v inicio;
     private Nodo_v fin;
+    private Nodo_v par;
     
     
     public lista_doble(){
@@ -66,7 +70,7 @@ public class lista_doble {
     
     }
     
-    public String Extrar_inicio(){
+   /* public String Extrar_inicio(){
         String dato=inicio.getDato();
         inicio=inicio.getSiguiente();
         
@@ -80,7 +84,7 @@ public class lista_doble {
         
     }
     
-    /* public String Extrar_fin(){
+     public String Extrar_fin(){
         String dato=fin.getDato();
         fin=fin.getAnterior();
         
@@ -135,6 +139,66 @@ public class lista_doble {
          }
          return mensaje;
      }
+      
+      public String pares(String dato){
+          String x=dato;
+          int x2=Integer.parseInt(x),contador=0;
+          String mensaje="";
+          Nodo_v temporal=inicio;
+          
+          if(x2%2==0){
+         
+                  
+                  mensaje="es par ";
+                
+              
+          }else{
+              mensaje="no es par";
+          }
+          
+          
+          
+          return mensaje;
+      }
+       public String impares(String dato1){
+          String x=dato1;
+          int x2=Integer.parseInt(x),contador=0;
+          String mensaje="";
+          Nodo_v temporal=inicio;
+          
+          if(x2%2!=0){
+         
+                  
+                  mensaje="es impar ";
+                
+              
+          }else{
+              mensaje="no es impar";
+          }
+          
+          
+          
+          return mensaje;
+      }
+       
+       public String promedio(){
+           String mensaje="";
+           int x=0;
+           x=0;
+           String contador2;
+           int contador=0;
+           while(x!=100){
+               
+               contador2=JOptionPane.showInputDialog("escriba numero");
+               contador=Integer.parseInt(contador2);
+               x=x+contador;
+               
+           }
+           
+           return mensaje;
+       }
             
     
 }
+
+
